@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "Gogoanime Ad Blocker (local)",
+  "version": "1.0",
+  "description": "Blocks the llvpn.com click-hijack ad tag and pop-ups on gogoanime.or.at and its embedded player frames only.",
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "site_rules",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://gogoanime.or.at/*",
+        "https://gogoanime.me.uk/*",
+        "https://megaplay.buzz/*"
+      ],
+      "js": [
+        "guard.js"
+      ],
+      "css": [
+        "hide.css"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "https://www.youtube.com/*"
+      ],
+      "js": [
+        "yt.js"
+      ],
+      "css": [
+        "yt.css"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}

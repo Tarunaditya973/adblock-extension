@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "requestDomains": [
+        "llvpn.com"
+      ],
+      "initiatorDomains": [
+        "gogoanime.or.at",
+        "gogoanime.me.uk",
+        "megaplay.buzz"
+      ]
+    }
+  }
+]
