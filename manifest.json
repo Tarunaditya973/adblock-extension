@@ -20,7 +20,11 @@
       "matches": [
         "https://gogoanime.or.at/*",
         "https://gogoanime.me.uk/*",
-        "https://megaplay.buzz/*"
+        "https://megaplay.buzz/*",
+        "https://9anime.si/*",
+        "https://www.9anime.si/*",
+        "https://animekai.be/*",
+        "https://www.animekai.be/*"
       ],
       "js": [
         "guard.js"

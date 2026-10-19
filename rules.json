@@ -15,5 +15,35 @@
         "megaplay.buzz"
       ]
     }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "requestDomains": [
+        "woyiman.com"
+      ],
+      "initiatorDomains": [
+        "9anime.si"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "requestDomains": [
+        "caboucalamda.com"
+      ],
+      "initiatorDomains": [
+        "animekai.be"
+      ]
+    }
   }
 ]
